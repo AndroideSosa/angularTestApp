@@ -1,0 +1,25 @@
+<div class="container main-container">
+  <h2>
+    {{title}}
+  </h2>
+  <span> Número 1: </span> 
+      <input  type="number" class="form-control" id="uno" [(ngModel)]="uno" placeholder="Primer número"> 
+  <span> Número 2: </span> 
+      <input  type="number" class="form-control" id="dos" [(ngModel)]="dos" placeholder="Segundo número"> 
+  <br><br><br>
+  <button (click)="adicion(uno,dos)" id="buttonSumar">
+    Sumar
+  </button>
+  <button (click)="restar(uno,dos)" id="buttonRestar">
+    Restar 
+  </button>
+  <button (click)="multiplicar(uno,dos)" id="buttonMultiplicar">
+    Multiplicar
+  </button>
+  <button (click)="dividir(uno,dos)" id="buttonDividir">
+    Dividir
+</button>
+  <br><br><br>
+  Resultado:       
+      <input  type="number" class="form-control" id="resultado" [(ngModel)]="resultado" placeholder="Resultado"> 
+</div>
